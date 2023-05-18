@@ -1,5 +1,5 @@
 
 
-let message : string = "Hello World";
+let message : string = "Hello World 2";
 console.log(message);
 
