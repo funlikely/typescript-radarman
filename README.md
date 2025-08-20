@@ -59,7 +59,25 @@ node pe-001.js
 npx ts-node pe-001.ts
 ```
 
+### Install Angular
+Note: in command prompt, the assoc command will work. But not PowerShell.
+```
+assoc .cmd=cmdfile
+ftype cmdfile="%SystemRoot%\System32\cmd.exe" /c "%1" %*
+
+npm install -g @angular/cli
+
+ng version
+```
+
+Run some Angular hello-world
+
+```
+ng new hello-world-app
+cd hello-world-app
+ng serve --open
+```
+
 ### TODO
  - [x]  Ensure one can run winget from somewhere outside the WindowsApps folder.  Add to the path env variable or sommething. *Note, it seems to have required restarting Windows. Getting the path variable to update without a restart was vexing.  There are apparently ways to do it, without restarting. Try harder next time?* Maybe `rundll32.exe sysdm.cpl,EditEnvironmentVariables` or `& cmd /c "setx PATH ""$env:Path"""`
-
-
+ - [ ] Pick some emoji 🌮
