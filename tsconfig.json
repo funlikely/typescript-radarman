@@ -8,9 +8,9 @@
       "forceConsistentCasingInFileNames": true,
       "lib": ["es2020", "dom"],          // Built-in APIs (Array.from, Promise, console, fetch, etc.)
       "outDir": "./dist",                // Where compiled .js files go
-      "rootDir": "."                 // Where your .ts source files live
+      "rootDir": "./src"                 // Where your .ts source files live
     },
-    "include": ["**/*"],             // Compile everything in src/
+    "include": ["src/**/*"],             // Compile everything in src/
     "exclude": ["node_modules"]          // Ignore dependencies
   }
   
