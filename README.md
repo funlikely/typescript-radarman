@@ -14,6 +14,9 @@ git add .
 git commit =m "initial commit"
 git push -u origin my-braaaaanch
 git push
+git checkout main
+git merge my-braaaaanch
+git push
 
 ```
 
