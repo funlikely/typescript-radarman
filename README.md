@@ -57,6 +57,13 @@ node pe-001.js
 
 # Use ts-node to run a .ts file directly
 npx ts-node pe-001.ts
+
+# Start a REPL using ts-node. Either of these will work.
+# Well, the second will work if you've done a 'npm install -g ts-node' and installed it globally
+npx ts-node
+ts-node
+
+# Exit REPL with '.exit', or Ctrl+C x2
 ```
 
 ### Install Angular
