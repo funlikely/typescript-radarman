@@ -1,8 +1,16 @@
 {
     "compilerOptions": {
-        "target": "ES6",
-        "module": "CommonJS",
-        "outDir": "out",
-        "sourceMap": true
-    }
-}
+      "target": "es2020",                // Modern JavaScript output (can also use "es2015" or "esnext")
+      "module": "commonjs",              // or "esnext" if using ESM
+      "strict": true,                    // Enables strict type-checking
+      "esModuleInterop": true,           // Allows clean import syntax for CommonJS modules
+      "skipLibCheck": true,              // Skip type checking of declaration files for speed
+      "forceConsistentCasingInFileNames": true,
+      "lib": ["es2020", "dom"],          // Built-in APIs (Array.from, Promise, console, fetch, etc.)
+      "outDir": "./dist",                // Where compiled .js files go
+      "rootDir": "./src"                 // Where your .ts source files live
+    },
+    "include": ["src/**/*"],             // Compile everything in src/
+    "exclude": ["node_modules"]          // Ignore dependencies
+  }
+  
